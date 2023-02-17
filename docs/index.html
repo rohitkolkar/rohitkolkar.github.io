@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      #bot {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+}
+#cont{
+    background-color: #595959;
+    height: 120px;
+    padding: 20px;
+}
+#now{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 70px;
+    outline: none;
+    list-style-type: disc;
+}
+#jon{
+    background-color: grey;
+    margin-top: -16px;
+}
+#hob{
+    background-color: #595959;
+    height: 120px;
+    padding: 20px;
+}
+#about {
+    width: 100%;
+    height: 60rem;
+    background-color: #EAE0da;
+}
+ul{
+    list-style-type:none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-weight: 100px;
+}
+li a:hover {
+    background-color: orange;
+}
+
+#skill {
+    width: 100%;
+    height: 40rem;
+    background-color: #EAE0da;
+    color: white;
+    margin-top: 100px;
+}
+
+/* #project {
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(110, 152, 46);
+} */
+#subhome1 {
+    width: 50%;
+    height: 40rem;
+    background-color: rgb(228, 130, 130);
+    position: absolute;
+    margin-top: 3rem;
+    right: 0px;
+}
+
+
+/* hiiiiiiii */
+
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #da4343;
+    transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+    top: 0;
+    left: 0;
+}
+
+.ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+    align-items: center;
+}
+
+#hello {
+    justify-content: center;
+    align-items: center;
+}
+
+.letters {
+    color: black;
+}
+/* contact log */
+.ck , .phone{
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  .col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+/* image */
+
+img {
+    height: 25rem;
+    border-radius: 75px;
+}
+
+
+/* about me */
+
+#abtme {
+    color: black;
+}
+
+#baap {
+    height: 100px;
+    width: 100%;
+    background-color: #EAE0da;
+    height: 36rem;
+}
+
+#right {
+    height: 34rem;
+    background-color: #EAE0da;
+    width: 50%;
+    margin-top: 0rem;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left img{
+    height: 35rem;
+    border-radius: -1px;
+}
+#left {
+    background-color: #EAE0da;
+    height: 60rem;
+    width: 50%;
+    margin-top: 0rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edu{
+    background-color: #EAE0da;
+    color : black;
+    font-size: 24px;
+}
+.roh{
+  float: right;
+}
+#para {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 25px;
+}
+
+
+/* end of hom */
+
+
+/* start of skill */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo';
+}
+
+body {
+    background-color: #EAE0da;
+}
+
+.main {
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.roller {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D3557;
+}
+
+#spare-time {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+}
+
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -4rem;
+    }
+    50% {
+        top: -8rem;
+    }
+    72.5% {
+        top: -12.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #F1FAEE;
+        font-size: 2.125rem;
+    }
+    .roller {
+        height: 2.6rem;
+        line-height: 2.125rem;
+    }
+    #spare-time {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+    .roller #rolltext {
+        animation: slide-mob 5s infinite;
+    }
+    @keyframes slide-mob {
+        0% {
+            top: 0;
+        }
+        25% {
+            top: -2.125rem;
+        }
+        50% {
+            top: -4.25rem;
+        }
+        72.5% {
+            top: -6.375rem;
+        }
+    }
+}
+
+#title {
+    color: #F1FAEE;
+}
+
+#skillsaquired {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #595959;
+}
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+.animate {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin: 0 0 0 15px;
+} */
+
+/* .animate:first-of-type {
+    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+    /*animation: showup 7s infinite;
+}*/
+
+/*.animate:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+/*.animate:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+} */
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 355px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+#jose {
+    margin: 0 0 0 220px;
+}
+
+
+/* skills js html etc */
+
+.inline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#htmls {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-right: 2rem;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+}
+
+#csss {
+    width: 10rem;
+    height: 10rem;
+    background-color:white;
+    margin-right: 5px;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+#javascript {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-right: 5px;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+#next {
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+.inl {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#cc {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-right: 2rem;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+}
+.inl div img{
+    width: 40px;
+    height: 40px;
+}
+#cplus {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 30px;
+    background-color: white;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+
+}
+#prerana{
+    background-color: #050709;
+    color: aliceblue;
+}
+
+#java {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 30px;
+    background-color: white;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+#dsa {
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+.inline div img {
+    width: 156px;
+    height: 156px;
+}
+
+.inl div img {
+    width: 156px;
+    height: 156px;
+}
+
+@media (min-width:375px)and (max-width:910px) {
+    .inline {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #htmls {
+        width: 4rem;
+        height: 4rem;
+        background-color: white;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    #csss {
+        width: 4rem;
+        height: 4rem;
+        background-color: white;
+        margin-right: 5px;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    #javascript {
+        width: 4rem;
+        height: 4rem;
+        background-color: white;
+        margin-right: 5px;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    .inline div img {
+        width: 30px;
+        height: 30px;
+    }
+    .inl div img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #para {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 12px;
+    }
+
+    #edu{
+        background-color: #EAE0da;
+        color : black;
+        font-size: 12px;
+
+
+
+}
+
+
+
+
+
+#left div div img{
+
+    width: 12rem;
+    height: auto;
+
+
+}
+#left,#right,#about{
+    height: 29rem;
+
+}
+
+
+
+
+.phone{
+
+
+margin-left: 5rem;
+
+
+
+}
+/* #logo{
+
+    width:100rem;
+} */
+
+
+
+}
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        input[type=text],
+        select,
+        textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #eeeeee;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        input[type=submit] {
+          background-color: #4cd9c6;
+          color: #ffffff;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+        }
+        input[type=submit]:hover {
+          background-color: #6fe8d7;
+        }
+        .container {
+          border-radius: 8px;
+          background-color: #e6e6e6;
+          padding: 15px;
+        }
+      </style>
+</head>
+
+<body>
+    <!-- navbar in port -->
+    <div id="Navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav border" class="roh">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-5"  aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link mx-5" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-5" href="#skill">SKILL</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-5" href="#project">HOBBIES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-5" href="#contact">CONTACT ME</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- nav bar ends -->
+
+
+    <!-- <div id="bot"> hello </div> -->
+    <!-- bottom ends -->
+
+
+
+    <div id="about">
+
+
+
+
+
+        <div id="hello">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+              <span class="line line1"></span>
+                <span class="letters" style="margin-bottom: 100px;">Hola Amigos</span>
+                </span>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        </div>
+
+            <div id="right" class="container-fluid h-100">
+                <div class="row h-100">
+                <div class="clo-sm-12 aline-self-center justify-center tracking-wide">
+                <p id="para">Hello friends,my name is <ur><b>Rohit Kolkar</b></ur> studing in<a href="https://www.git.edu/"> KLS Gogte Institute of Technology
+                    College in Belagavi, Karnataka </a>  my branch is computer science. my interest are <strong>Animation,Vfx & Game developing</strong>.I am team player who believes in team work,
+                    likes to face challenges and over come that situtation,and strongly believes in hard work
+                    <br>
+                    Educational Qualifications:
+
+                    <p style="font-size: 25px;">Completed my SSLC from Kendriya Vidyalaya No. 2,Belagavi</p>
+                    <p style="font-size: 25px;">Completed my puc from Kendriya Vidyalaya No. 2,Belagavi</p>
+
+                </p>
+            </div>
+            </div>
+
+            </div>
+
+
+            <div id="left" class="container-fluid">
+                <div class="row h-100">
+                <div class="col-sm-4 align-self-right c" >
+                <img src="http://drive.google.com/uc?export=view&id=1xz3dkuKQUYwD_xb5h-XmRQaqjcLpp0Yr" alt="My image" style="padding: 10px; background-color: white;">
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- end of about...bhgb    -->
+
+
+    <div id="skill">
+
+        <div id="skillsaquired"><h1>Skills aquired</h1></div>
+        <div class="inline">
+            <div id="htmls"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU"></div>
+            <div id="csss"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"></div>
+            <div id="javascript"><img src="https://static.javatpoint.com/images/javascript/javascript_logo.png"></div>
+        </div>
+
+        <div class="inl">
+            <div id="cc"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"></div>
+            <div id="cplus"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"></div>
+            <div id="java"><img src="https://dev.java/assets/images/java-logo-vert-blk.png"></div>
+        </div>
+
+    </div>
+
+    <div id="project">
+        <div id="hob"><h1>Hobbies</h1></div>
+        <div id="jon">
+
+            <ul id="now">
+                <li>Story writing</li>
+                <li>Game developing</li>
+                <li>Editing</li>
+                <li>Photography</li>
+                <li>Vfx</li>
+            </ul>
+            <div id="cont"><h1>Contact Me</h1></div>
+        </div>
+        </div>
+    <!-- contscat -->
+    <div id="contact">
+
+
+    <div class="container">
+      <form>
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Type your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="surname" placeholder="Type your last name..">
+        <label for="lname">E-mail Address</label>
+        <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+        <label for="ci">Country</label>
+        <select id="country" name="country">
+          <option value="Enter your option">Enter your option</option>
+          <option value="india">India</option>
+          <option value="italy">Italy</option>
+          <option value="france">France</option>
+          <option value="Spain">Spain</option>
+          <option value="others">Others</option>
+
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
+        <input type="submit" >
+      </form>
+    </div>
+
+
+        <img class="ck" src="images/gmail.png.png" alt="Phone">
+        <strong>rohitkolkar9740@gmail.com</strong>
+
+        <img class="phone" src="images/smartphone-call.png" alt="Phone">
+        <strong>+91-7019038379</strong>
+
+
+
+
+
+
+    <!-- end of contact -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+   <script src="index.js"></script>
+
+</body>
+
+</html>
